@@ -9,8 +9,9 @@ import androidx.fragment.app.Fragment;
 
 import com.itpm_gk.e07_jyanken_app.R;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity
+    implements StartFragment.StartFragmentActionCallback
+{
     public static Intent createIntent(Context context) {
         return new Intent(context, MainActivity.class);
     }
@@ -20,9 +21,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Fragment fragment = StartFragment.newInstance();
+        Fragment startFragment = StartFragment.newInstance(this);
         getSupportFragmentManager().beginTransaction()
-            .add(R.id.fragment_container, fragment, "StartFragment")
+            .add(R.id.fragment_container, startFragment, "StartFragment")
             .commit();
+    }
+
+    @Override
+    public void onStartGame() {
+        Fragment jyankenFragment = JyankenFragment.newInstance();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, jyankenFragment, "JyankenFragment")
+                .commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+        // TODO: 終了確認処理
+        super.onBackPressed();
     }
 }

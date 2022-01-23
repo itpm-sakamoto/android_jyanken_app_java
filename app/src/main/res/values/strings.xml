@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">E07_jyanken_app</string>
+    <string name="start">スタート</string>
+    <string name="the_game">いざ勝負！</string>
+    <string name="jan">ジャン!</string>
+    <string name="ken">ケン!</string>
 </resources>

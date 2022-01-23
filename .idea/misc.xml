@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/selector_oval_btn.xml" value="0.15208333333333332" />
+        <entry key="app/src/main/res/drawable/selector_rectangle_btn.xml" value="0.2111111111111111" />
+        <entry key="app/src/main/res/drawable/shape_rectangle_btn_off.xml" value="0.2111111111111111" />
+        <entry key="app/src/main/res/drawable/shape_rectangle_btn_on.xml" value="0.2111111111111111" />
+        <entry key="app/src/main/res/drawable/shape_ring_background.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/shape_ring_off_background.xml" value="0.15208333333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2625" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2625" />
+        <entry key="app/src/main/res/layout/fragment_jyanken.xml" value="0.2625" />
         <entry key="app/src/main/res/layout/fragment_start.xml" value="0.2625" />
       </map>
     </option>
